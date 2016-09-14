@@ -618,7 +618,7 @@ open class FCAlertView: UIView {
       return
     }
     
-    delegate.alertView(self, clickedButtonIndex: sender.tag, buttonTitle: sender.titleLabel!.text!)
+    delegate.alertView(in: self, clickedButtonIndex: sender.tag, buttonTitle: sender.titleLabel!.text!)
     
     self.dismissAlertView()
   }

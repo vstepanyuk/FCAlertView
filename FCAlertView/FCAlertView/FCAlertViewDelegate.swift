@@ -9,7 +9,7 @@
 import Foundation
 
 public protocol FCAlertViewDelegate: NSObjectProtocol {
-  func alertView(_ alertView: FCAlertView, clickedButtonIndex index: Int, buttonTitle title:String)
+  func alertView(in alertView: FCAlertView, clickedButtonIndex index: Int, buttonTitle title:String)
   
   // Optional
   func FCAlertViewDismissed(in alertView: FCAlertView)

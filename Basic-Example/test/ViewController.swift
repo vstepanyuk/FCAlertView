@@ -23,23 +23,23 @@ class ViewController: UIViewController {
     alertView.delegate = self
   }
 
-  @IBAction func showAlert(sender: UIButton) {
+  @IBAction func showAlert(_ sender: UIButton) {
     
     alertView.showAlert(inView: self, withTitle: "Testing", withSubtitle: "This is a test of the alert view. Touch the Close button to hide.", withCustomImage: nil, withDoneButtonTitle: "Done", andButtons: ["first", "second"])
   }
 }
 
 extension ViewController: FCAlertViewDelegate {
-  func alertView(alertView: FCAlertView, clickedButtonIndex index: Int, buttonTitle title: String) {
+  func alertView(in alertView: FCAlertView, clickedButtonIndex index: Int, buttonTitle title: String) {
     print("\(title) : \(index)")
     
   }
   
-  func FCAlertViewDismissed(alertView: FCAlertView) {
+  func FCAlertViewDismissed(in alertView: FCAlertView) {
     print("Delegate handling dismiss")
   }
   
-  func FCAlertViewWillAppear(alertView: FCAlertView) {
+  func FCAlertViewWillAppear(in alertView: FCAlertView) {
     print("Delegate handling appearance")
   }
 }
