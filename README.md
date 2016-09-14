@@ -52,7 +52,7 @@ import FCAlertView
 ```Swift
 let alert = FCAlertView()
 
-alert.showAlert(inView: self,
+alert.showAlert(in: self,
 				withTitle: "Alert Title",
 				withSubtitle: "This is your alert's subtitle. Keep it short and concise. 😜👌",
 				withCustomImage: nil,
@@ -213,7 +213,7 @@ let alert = FCAlertView();
 
 alert.delegate = self
 
-alert.showAlert(inView: self,
+alert.showAlert(in: self,
              withTitle:"Alert Title",
           withSubtitle:"This is your alert's subtitle. Keep it short and concise. 😜👌",
        withCustomImage:nil,
@@ -225,7 +225,7 @@ alert.showAlert(inView: self,
 After adding your FCAlertView, you can detect button touches by adding this method to your class:
 
 ```Swift
-func alertView(alertView: FCAlertView, clickedButtonIndex index: Int, buttonTitle title: String) {
+func alertView(in alertView: FCAlertView, clickedButtonIndex index: Int, buttonTitle title: String) {
 
 	if title == "Button 1" {
 		// Perform Action for Button 1
@@ -240,7 +240,7 @@ func alertView(alertView: FCAlertView, clickedButtonIndex index: Int, buttonTitl
 If you'd also like to detect button touch for the Done/Dismiss button, simply add this method to your class:
 
 ```Swift
-func FCAlertDoneButtonClicked(alertView: FCAlertView){
+func FCAlertDoneButtonClicked(in alertView: FCAlertView){
 	// Done Button was Pressed, Perform the Action you'd like here.
 }
 ```
@@ -267,7 +267,7 @@ alert.delegate = self
 ### Detect when FCAlertView has been dismissed
 
 ```Swift
-func FCAlertViewDismissed(alertView: FCAlertView){
+func FCAlertViewDismissed(in alertView: FCAlertView){
 	// Your FCAlertView was Dismissed, Perform the Action you'd like here.
 }
 ```
@@ -275,7 +275,7 @@ func FCAlertViewDismissed(alertView: FCAlertView){
 ### Detect when FCAlertView is about to present
 
 ```Swift
-func FCAlertViewWillAppear(alertView: FCAlertView){
+func FCAlertViewWillAppear(in alertView: FCAlertView){
 	// Your FCAlertView will be Presented, Perform the Action you'd like here.
 }
 ```
@@ -300,14 +300,14 @@ FCAlertView is an ongoing project with the goal of becoming the most used custom
 About FCAlertView
 -----------------
 
-FCAlertView is a fully customizable and beautifully designed AlertView. I designed FCAlertView beacuse I've always wanted to have access to change the different attributes of the default UIAlertView. Design wise, FCAlertView is similar looking to the default AlertView, however, as you start customizing it for your specific need, you realize it can do a lot more while looking flat and sharp.
+FCAlertView is a fully customizable and beautifully designed AlertView. I designed FCAlertView because I've always wanted to have access to change the different attributes of the default UIAlertView. Design wise, FCAlertView is similar looking to the default AlertView, however, as you start customizing it for your specific need, you realize it can do a lot more while looking flat and sharp.
 
 FCAlertView lets you do things such as specify the number of buttons, the color scheme of the view, adding a small image to it, hide the view after a certain time, and more. A full description of how to customize FCAlertView to fit your alert can be found on http://github.com/nimati/FCAlertView.
 
 The Vision for FC Libraries
 ---------------------------
 
-My goal is to create a set of different libraries, each targetting a certain UI element of iOS, with the goal to improve the design and add more customizations. As such, FCAlertView is a more Flat/Customizable AlertView. With this mindset, I'd like to create more FC libraries, such as FCActionSheet, FCNotification (for quick, in app alerts), FCGuideView (for guiding your users around your app). If you also have a suggestion for an FC Library, please send it [here](mailto:nima6tahami@gmail.com).
+My goal is to create a set of different libraries, each targeting a certain UI element of iOS, with the goal to improve the design and add more customizations. As such, FCAlertView is a more Flat/Customizable AlertView. With this mindset, I'd like to create more FC libraries, such as FCActionSheet, FCNotification (for quick, in app alerts), FCGuideView (for guiding your users around your app). If you also have a suggestion for an FC Library, please send it [here](mailto:nima6tahami@gmail.com).
 
 > Ultimately, FC Libraries is here to improve the look and feel of your app for your end users. So all improvements and suggestions are welcome.
 
