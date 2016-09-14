@@ -554,7 +554,7 @@ open class FCAlertView: UIView {
   }
   
   //Presenting AlertView
-  open func showAlert(inView view: UIViewController, withTitle title: String?, withSubtitle subTitle: String, withCustomImage image: UIImage?, withDoneButtonTitle done: String?, andButtons buttons: [String]?) {
+  open func showAlert(in alertView: UIViewController, withTitle title: String?, withSubtitle subTitle: String, withCustomImage image: UIImage?, withDoneButtonTitle done: String?, andButtons buttons: [String]?) {
     
     self.title = title
     self.subTitle = subTitle
@@ -570,7 +570,7 @@ open class FCAlertView: UIView {
     numberOfButtons = buttons?.count ?? 0
     
     checkCustomizationValid()
-    view.view.window?.addSubview(self)
+    alertView.view.window?.addSubview(self)
     
     if !firstRun {
       showAlertView()
