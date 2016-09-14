@@ -12,15 +12,15 @@ public protocol FCAlertViewDelegate: NSObjectProtocol {
   func alertView(_ alertView: FCAlertView, clickedButtonIndex index: Int, buttonTitle title:String)
   
   // Optional
-  func FCAlertViewDismissed(_ alertView: FCAlertView)
-  func FCAlertViewWillAppear(_ alertView: FCAlertView)
-  func FCAlertDoneButtonClicked(_ alertView: FCAlertView)
+  func FCAlertViewDismissed(in alertView: FCAlertView)
+  func FCAlertViewWillAppear(in alertView: FCAlertView)
+  func FCAlertDoneButtonClicked(in alertView: FCAlertView)
   
 }
 
 // Provide default impementation for optional methods
 public extension FCAlertViewDelegate {
-  func FCAlertViewDismissed(_ alertView: FCAlertView) {}
-  func FCAlertViewWillAppear(_ alertView: FCAlertView) {}
-  func FCAlertDoneButtonClicked(_ alertView: FCAlertView) {}
+  func FCAlertViewDismissed(in alertView: FCAlertView) {}
+  func FCAlertViewWillAppear(in alertView: FCAlertView) {}
+  func FCAlertDoneButtonClicked(in alertView: FCAlertView) {}
 }

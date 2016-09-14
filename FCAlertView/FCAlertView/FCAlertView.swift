@@ -585,7 +585,7 @@ open class FCAlertView: UIView {
   func showAlertView() {
     
     if let delegate = self.delegate {
-      delegate.FCAlertViewWillAppear(self)
+      delegate.FCAlertViewWillAppear(in: self)
     }
     
     UIView.animate(withDuration: 0.3, delay: 0.3, usingSpringWithDamping: 1, initialSpringVelocity: 1, options: UIViewAnimationOptions(), animations: {
@@ -606,7 +606,7 @@ open class FCAlertView: UIView {
     }) { (finished) in
       
       if let delegate = self.delegate {
-        delegate.FCAlertViewDismissed(self)
+        delegate.FCAlertViewDismissed(in: self)
       }
       
       self.removeFromSuperview()
@@ -626,7 +626,7 @@ open class FCAlertView: UIView {
   @objc fileprivate func donePressed(_ sender: UIButton){
     
     if let delegate = delegate {
-      delegate.FCAlertDoneButtonClicked(self)
+      delegate.FCAlertDoneButtonClicked(in: self)
     }
     
     self.dismissAlertView()
