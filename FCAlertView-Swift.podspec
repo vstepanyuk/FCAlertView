@@ -28,7 +28,7 @@ Pod::Spec.new do |s|
   FCAlertView is a fully customizable and beautifully designed AlertView. I designed FCAlertView beacuse I've always wanted to have access to change the different attributes of the default AlertView. Design wise, FCAlertView is similar looking to the default AlertView, however, as you start customizing it for your specific need, you realize it can do a lot more and look very flat and nice. FCAlertView lets you do things such as specify the number of buttons, the color scheme of the view, adding a small image to it, hide the view after a certain time, and more. A full description of how to customize FCAlertView to fit your alert can be found on http://github.com/nimati/FCAlertView
                          DESC
 
-  s.homepage     = "https://github.com/k9101/FCAlertView"
+  s.homepage     = "https://github.com/k9101/FCAlertView.git"
   #s.screenshots  = "https://github.com/nimati/FCAlertView/blob/master/Images/ScreenShots/ScreenShot.png", "https://github.com/nimati/FCAlertView/blob/master/Images/ScreenShots/ScreenShot2.png"
 
 
