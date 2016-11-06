@@ -90,7 +90,7 @@ Pod::Spec.new do |s|
   #  Not including the public_header_files will make all headers public.
   #
 
-  s.source_files  = "FCAlertView/**/*"
+  s.source_files  = "FCAlertView/FCAlertView/*{h,swift,png}"
   # s.public_header_files = "Classes/**/*.h"
 
 
